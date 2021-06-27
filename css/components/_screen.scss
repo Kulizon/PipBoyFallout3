@@ -1,0 +1,634 @@
+.pip-boy {
+  &__screen-casing {
+    background: #2e3f3a;
+    width: 45rem;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    position: relative;
+    border-radius: 30px;
+    border: 2rem solid $light-green-color;
+    z-index: 2;
+  }
+
+  &__screen {
+    background: #000000;
+    width: 92.5%;
+    height: 92.5%;
+    border-radius: 10px;
+    padding: 0.9rem 1.5rem 0.75rem;
+    display: grid;
+    grid-template-rows: 2rem auto 2rem;
+    position: relative;
+    min-width: 550px;
+    overflow: hidden;
+
+    &__top-menu {
+      grid-row: 1/2;
+    }
+
+    &__main-content {
+      grid-row: 2/3;
+    }
+
+    &__bottom-menu {
+      grid-row: 3/4;
+    }
+
+    &__scan {
+      width: 100%;
+      height: 80px;
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(37, 216, 82, 0.4));
+      position: absolute;
+      animation: scan;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      top: -85px;
+      z-index: 2;
+      opacity: 0.3;
+      pointer-events:none;
+    }
+
+    @keyframes scan {
+      0% {
+        top: -80px;
+      }
+      70% {
+        top: 490px;
+      }
+      100% {
+        top: 490px;
+      }
+    }
+
+    &__top-menu {
+      color: $screen-font-color;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      span {
+        width: 20px;
+        height: 29px;
+        border-top: 2px solid $screen-font-color;
+        border-left: 2px solid $screen-font-color;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+        transform: translate(4px, -10px);
+      }
+
+      h4 {
+        border-top: 2px solid $screen-font-color;
+        border-right: 2px solid $screen-font-color-opacity;
+        padding: 4px 8px;
+
+        &:first-of-type {
+          padding: 4px 8px 4px 18px;
+        }
+
+        &:last-of-type {
+          border-right: 2px solid $screen-font-color;
+        }
+      }
+    }
+
+    &__bottom-menu {
+      color: $screen-font-color;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      transform: translateY(-2.25rem);
+
+      h3 {
+        font-size: 1.2rem;
+        padding: 0 6px;
+        border: 2px solid rgba(0, 0, 0, 0);
+        cursor: pointer;
+
+        &:hover {
+          border: 2px solid $screen-font-color-opacity;
+        }
+
+        &.long-title {
+          min-width: 103px;
+        }
+      }
+
+      span {
+        width: 100%;
+        height: 29px;
+        border-bottom: 2px solid$screen-font-color;
+        transform: translateY(-12.5px);
+
+        &:first-of-type {
+          border-left: 2px solid$screen-font-color;
+        }
+
+        &:last-of-type {
+          border-right: 2px solid$screen-font-color;
+        }
+      }
+    }
+
+    &--stats,
+    &--items,
+    &--data {
+      @extend .pip-boy__screen;
+
+      .pip-boy__screen__main-content {
+        transform: translateY(-0rem);
+        padding: 15px 30px;
+        max-height: 260px;
+        overflow-y: scroll;
+        transform: translateY(5px);
+
+        h4 {
+          font-size: 1rem;
+          color: $screen-font-color;
+
+          &:hover {
+            cursor: default;
+          }
+        }
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+
+    &--stats {
+      display: grid;
+
+      .pip-boy__screen__main-content {
+        &--status {
+          @extend .pip-boy__screen__main-content;
+
+          img {
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            width: 140px;
+          }
+
+          &__health-bar {
+            width: 3rem;
+            height: 0.75rem;
+            background: $screen-font-color;
+            border: 3px solid #000;
+            outline: 2px solid $screen-font-color;
+            position: absolute;
+
+            &::after {
+              content: "......";
+              background: #000;
+              color: #000;
+              position: relative;
+              top: 0.5rem;
+              z-index: 2;
+            }
+
+            &:nth-of-type(1) {
+              left: 26%;
+              bottom: 28%;
+            }
+
+            &:nth-of-type(2) {
+              right: 26%;
+              bottom: 28%;
+            }
+
+            &:nth-of-type(3) {
+              left: 26%;
+              top: 40%;
+            }
+
+            &:nth-of-type(4) {
+              right: 26%;
+              top: 40%;
+            }
+
+            &:nth-of-type(5) {
+              left: 49.5%;
+              transform: translateX(-50%);
+              top: 9%;
+            }
+          }
+        }
+
+        &--special {
+          @extend .pip-boy__screen__main-content;
+          display: none;
+          position: relative;
+
+          &__desc {
+            display: none;
+            position: absolute;
+            width: 50%;
+            right: 0;
+            bottom: 0;
+            padding-top: 0.5rem;
+            border-top: 2px solid $screen-font-color;
+
+            h5 {
+              font-size: 1rem;
+              color: $screen-font-color;
+            }
+          }
+
+          &__stat {
+            display: flex;
+            width: 40%;
+            justify-content: space-between;
+            margin-bottom: 0.1rem;
+            padding: 4px 8px;
+            border: 2px solid rgba(0, 0, 0, 0);
+
+            &:hover {
+              border: 2px solid $screen-font-color-opacity;
+
+              & + div {
+                display: flex;
+              }
+            }
+          }
+        }
+
+        &--skills,
+        &--perks {
+          @extend .pip-boy__screen__main-content;
+          display: none;
+
+          &__stat {
+            @extend .pip-boy__screen__main-content--special__stat;
+          }
+
+          &__desc {
+            @extend .pip-boy__screen__main-content--special__desc;
+          }
+        }
+
+        &--general {
+          @extend .pip-boy__screen__main-content;
+          display: none;
+
+          &__stat {
+            @extend .pip-boy__screen__main-content--special__stat;
+            width: 55%;
+          }
+
+          img {
+            position: absolute;
+            width: 25%;
+            right: 10%;
+            bottom: 50%;
+            transform: translateY(55%);
+            filter: brightness(0.65);
+          }
+        }
+      }
+    }
+
+    &--items {
+      display: none;
+      .pip-boy__screen__main-content {
+        &--weapons {
+          @extend .pip-boy__screen__main-content;
+          display: block;
+          position: relative;
+
+          &__desc {
+            display: none;
+            position: absolute;
+            width: 50%;
+            right: 0;
+            bottom: 0;
+            padding-top: 0.5rem;
+            border-top: 2px solid $screen-font-color;
+
+            h5 {
+              font-size: 1rem;
+              color: $screen-font-color;
+            }
+
+            &--detailed {
+              @extend .pip-boy__screen__main-content--weapons__desc;
+              display: none;
+              grid-template-columns: repeat(3, 1fr);
+              column-gap: 1rem;
+              row-gap: 0.75rem;
+              border-top: none;
+              bottom: 2rem;
+
+              div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-top: 2px solid $screen-font-color;
+                border-right: 2px solid $screen-font-color-opacity;
+                padding: 4px 4px 0;
+
+                &:last-of-type {
+                  grid-column: span 2;
+                }
+
+                span {
+                  width: 2.25rem;
+                  height: 0.75rem;
+                  background: $screen-font-color;
+                  position: relative;
+                  overflow: hidden;
+                  padding: 0;
+
+                  div {
+                    height: 1rem;
+                    width: 1.75rem;
+                    background: #000;
+                    position: absolute;
+                    right: -0.2rem;
+                    top: -0.2rem;
+                    opacity: 0.7;
+                  }
+                }
+              }
+            }
+          }
+
+          &__stat {
+            display: flex;
+            width: 40%;
+            justify-content: space-between;
+            margin-bottom: 0.1rem;
+            padding: 4px 8px;
+            border: 2px solid rgba(0, 0, 0, 0);
+
+            &:hover {
+              border: 2px solid $screen-font-color-opacity;
+
+              & + div {
+                display: flex;
+              }
+            }
+
+            &--detailed {
+              @extend .pip-boy__screen__main-content--weapons__stat;
+              width: 45%;
+
+              &:hover {
+                & + div {
+                  display: grid;
+                }
+              }
+            }
+          }
+        }
+
+        &--apparel,
+        &--aid,
+        &--misc,
+        &--ammo {
+          @extend .pip-boy__screen__main-content;
+          display: none;
+
+          &__stat--detailed {
+            @extend .pip-boy__screen__main-content--weapons__stat--detailed;
+          }
+
+          &__desc--detailed {
+            @extend .pip-boy__screen__main-content--weapons__desc--detailed;
+          }
+        }
+
+        &--apparel {
+          &__desc--detailed {
+            div:last-of-type {
+              grid-row: 3;
+              grid-column: span 3;
+            }
+          }
+        }
+
+        &--aid,
+        &--misc,
+        &--ammo {
+          &__desc--detailed {
+            div:first-of-type {
+              grid-column: 2/3;
+            }
+            div:last-of-type {
+              grid-row: 2;
+              grid-column: span 3;
+            }
+          }
+        }
+
+        &--misc,
+        &--ammo {
+          &__desc--detailed {
+            div:last-of-type {
+              grid-row: 1;
+              grid-column: 3/4;
+            }
+          }
+        }
+      }
+    }
+
+    &--data {
+      display: none;
+
+      .pip-boy__screen__top-menu h4:first-of-type {
+        padding-left: 50px;
+      }
+
+      .pip-boy__screen__main-content {
+        h2 {
+          color: $screen-font-color;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 1.4rem;
+        }
+
+        &--local-map {
+          @extend .pip-boy__screen__main-content;
+          display: none;
+          position: relative;
+        }
+
+        &--world-map,
+        &--quests,
+        &--notes,
+        &--radio {
+          @extend .pip-boy__screen__main-content;
+          display: none;
+
+          &__stat {
+            display: flex;
+            width: 35%;
+            justify-content: space-between;
+            margin-bottom: 0.1rem;
+            padding: 4px 8px;
+            border: 2px solid rgba(0, 0, 0, 0);
+
+            &:hover {
+              border: 2px solid $screen-font-color-opacity;
+
+              & + div {
+                display: flex;
+              }
+            }
+          }
+
+          &__desc {
+            display: none;
+            position: absolute;
+            width: 55%;
+            right: 0;
+            bottom: 0;
+            padding-top: 0.5rem;
+            border-top: 2px solid $screen-font-color;
+
+            h5 {
+              font-size: 1rem;
+              color: $screen-font-color;
+            }
+          }
+        }
+
+        &--quests,
+        &--notes {
+          &__desc {
+            display: none;
+            flex-direction: column;
+            max-height: 300px;
+            overflow: scroll;
+            top: 2rem;
+            border-top: 0;
+            z-index: 2;
+
+            &::-webkit-scrollbar {
+              display: none;
+            }
+
+            h5 {
+              padding-bottom: 0.75rem;
+              padding-left: 2rem;
+              opacity: 0.4;
+
+              &:first-of-type {
+                opacity: 1;
+                &::before {
+                  background: #000;
+                }
+              }
+
+              &::before {
+                content: ".";
+                left: 0rem;
+                transform: translateY(0.25rem);
+                width: 0.5rem;
+                height: 0.5rem;
+                position: absolute;
+                background: $screen-font-color;
+                border: 1px solid $screen-font-color;
+                color: rgba(0, 0, 0, 0);
+              }
+
+              &:last-of-type {
+                padding-bottom: 0;
+              }
+            }
+          }
+        }
+
+        &--notes {
+          h5::before {
+            content: "";
+            display: none;
+          }
+        }
+
+        &--radio {
+          &__stat {
+            width: 50%;
+            margin-bottom: 0.5rem;
+          }
+
+          &__signal {
+            position: absolute;
+            width: 13rem;
+            right: 0;
+            bottom: 1.5rem;
+            height: 13rem;
+            border-right: 2px solid $screen-font-color;
+            border-bottom: 2px solid $screen-font-color;
+
+            &__line {
+              position: absolute;
+              top: 3rem;
+            }
+
+            &__bar {
+              width: 2px;
+              height: 0.75rem;
+              background: $screen-font-color;
+              opacity: 0.6;
+              position: absolute;
+
+              &:nth-of-type(1),
+              &:nth-of-type(2),
+              &:nth-of-type(3),
+              &:nth-of-type(4) {
+                bottom: 0;
+                transform: translateX(1.5rem);
+              }
+
+              &:nth-of-type(2) {
+                left: 25%;
+              }
+
+              &:nth-of-type(3) {
+                left: 50%;
+              }
+
+              &:nth-of-type(4) {
+                left: 75%;
+              }
+
+              &:nth-of-type(5),
+              &:nth-of-type(6),
+              &:nth-of-type(7),
+              &:nth-of-type(8) {
+                right: 0;
+                width: 0.75rem;
+                height: 2px;
+                transform: translateY(1.5rem);
+              }
+
+              &:nth-of-type(6) {
+                top: 25%;
+              }
+
+              &:nth-of-type(7) {
+                top: 50%;
+              }
+
+              &:nth-of-type(8) {
+                top: 75%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

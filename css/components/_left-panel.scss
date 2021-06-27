@@ -1,0 +1,275 @@
+.pip-boy {
+  &__left-panel {
+    width: 16.5rem;
+    height: 27rem;
+    position: relative;
+    top: 1rem;
+    background: $light-green-color;
+    border-radius: 150px 0 0 50px;
+    right: -0.7rem;
+
+    &__rad-container {
+      position: absolute;
+      top: -2rem;
+      left: 2.5rem;
+      background: $dark-green-color;
+      width: 9rem;
+      height: 9rem;
+      border-radius: 60px;
+    }
+
+    &__rad-meter {
+      position: absolute;
+      padding: 0.5rem;
+      width: 6rem;
+      height: 6rem;
+      background: $dark-steel-color;
+      overflow: hidden;
+      border-radius: 360px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      z-index: 2;
+
+      &__scale {
+        position: absolute;
+        z-index: 2;
+        background: $dark-red-color;
+        border-radius: 360px;
+        width: 5.5rem;
+        height: 5.5rem;
+        left: 0.25rem;
+        top: 0.25rem;
+        backface-visibility: hidden;
+      }
+
+      .rotate-bug-fix {
+        position: relative;
+        width: 6rem;
+        height: 11rem;
+        transform: translateY(1rem);
+        right: 0.5rem;
+        margin-top: -1.5rem;
+        border-radius: 360px;
+        overflow: hidden;
+        z-index: 4;
+      }
+
+      &__rectangle {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $light-steel-color;
+        z-index: 4;
+        margin-top: -8rem;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &__half-circle {
+        position: absolute;
+        width: 4.75rem;
+        height: 5rem;
+        border-radius: 360px;
+        background: #bfc39e;
+        z-index: 3;
+        margin-top: -0.2rem;
+        margin-right: -0.5rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &__square {
+          position: absolute;
+          width: 0.55rem;
+          height: 0.55rem;
+          background: $dark-green-color;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          margin-top: 1rem;
+          z-index: 2;
+          border-radius: 2px;
+        }
+
+        &__pointer {
+          position: absolute;
+          width: 0.4rem;
+          height: 1.8rem;
+          background: $dark-green-color;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          margin-top: 5px;
+          border-radius: 4px;
+        }
+      }
+    }
+
+    &__switch {
+      position: absolute;
+      background: $dark-steel-color;
+      padding: 0.4rem;
+      border-radius: 360px;
+      align-self: flex-start;
+      bottom: 5rem;
+      left: 3rem;
+      z-index: 2;
+      transform: rotate(-30deg);
+
+      &__knob {
+        width: 4rem;
+        height: 4rem;
+        background-color: #2c3127;
+        border-radius: 360px;
+        z-index: 3;
+        position: relative;
+      }
+
+      &__pointer {
+        width: 0.8rem;
+        height: 2.25rem;
+        border-radius: 0 0 7px 7px;
+        background-color: #2c3127;
+        position: absolute;
+        z-index: 3;
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%) rotate(180deg);
+
+        &.opposed {
+          left: initial;
+          right: 50%;
+          top: 50%;
+          transform: translate(50%, 50%);
+          z-index: 3;
+        }
+      }
+
+      &__scale {
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        z-index: 1;
+
+        &__half-circle {
+          width: 8rem;
+          height: 8rem;
+          border-radius: 360px;
+          background: $dark-steel-color;
+          margin-top: -4.5rem;
+        }
+      }
+    }
+
+    &__wheel {
+      background: $semi-green-color;
+      padding: 0.25rem 1rem;
+      width: 3.5rem;
+      height: 12rem;
+      position: absolute;
+      border-radius: 10px;
+      z-index: 3;
+      right: -2rem;
+      bottom: 10rem;
+
+      &__wheel {
+        position: absolute;
+        width: 50%;
+        height: 80%;
+        background: #635c41;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        max-height: 12rem;
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        &__bar {
+          width: 100%;
+          height: 0.45rem;
+          margin: 0.85rem 0;
+          background: #3d361e;
+        }
+      }
+    }
+
+    &__model {
+      position: absolute;
+      width: 95%;
+      height: 25%;
+      right: 0;
+      bottom: 45%;
+      background: $light-green-color;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+      border-radius: 10px;
+
+      h1 {
+        font-size: 2rem;
+        transform: translateX(-5%);
+        font-family: overseer-font;
+        letter-spacing: 4px;
+        color: $light-steel-color;
+      }
+
+      &__bar {
+        width: 100%;
+        height: 0.75rem;
+        background: #2c3127;
+
+        &:last-of-type {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    &__overlay {
+      position: absolute;
+      width: 95%;
+      height: 95%;
+      background: #3a5342;
+      border-radius: 150px 0 0 110px;
+      z-index: 1;
+    }
+
+    .screw-casing {
+      position: absolute;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $light-green-color;
+      z-index: 3;
+      right: -1rem;
+      top: 1rem;
+      border-radius: 360px;
+
+      &--long {
+        @extend .screw-casing;
+        right: -0.3rem;
+        top: initial;
+        bottom: 2rem;
+        height: 4rem;
+        border-radius: 0 0 360px 360px;
+        background-color: $light-green-color;
+        transform: rotate(50deg);
+
+        .screw {
+          margin-bottom: -1rem;
+        }
+      }
+    }
+  }
+}

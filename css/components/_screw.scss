@@ -1,0 +1,25 @@
+@import '../variables';
+
+.screw {
+    background: $dark-steel-color;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 360px;
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: 4;
+
+    &__bar {
+        background: $light-steel-color;
+        width: 1.5rem;
+        height: 0.25rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &:first-of-type {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+    }
+}

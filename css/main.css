@@ -1,0 +1,1231 @@
+.screw {
+  background: #777D76;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 360px;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 4;
+}
+
+.screw__bar {
+  background: #8F948E;
+  width: 1.5rem;
+  height: 0.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.screw__bar:first-of-type {
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.pip-boy__right-panel {
+  width: 6rem;
+  height: 30rem;
+  bottom: 0;
+  background: #3A5342;
+  border-radius: 0 120px 20px 0;
+  position: relative;
+  left: -1.75rem;
+}
+
+.pip-boy__right-panel .screw {
+  right: 0.4rem;
+  top: 5.5rem;
+}
+
+.pip-boy__right-panel .screw:last-of-type {
+  top: initial;
+  bottom: 2rem;
+}
+
+.pip-boy__right-panel__small-wheel {
+  background: #435F4D;
+  width: 3rem;
+  height: 10rem;
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  right: 0rem;
+  top: 9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0.5rem 0;
+}
+
+.pip-boy__right-panel__small-wheel__bar {
+  width: 100%;
+  height: 0.9rem;
+  background: #2c3127;
+}
+
+.pip-boy__right-panel__small-wheel__bar:first-of-type {
+  margin-top: 0.75rem;
+}
+
+.pip-boy__right-panel__small-wheel__bar:last-of-type {
+  margin-bottom: 0.75rem;
+}
+
+.pip-boy__left-panel {
+  width: 16.5rem;
+  height: 27rem;
+  position: relative;
+  top: 1rem;
+  background: #50765B;
+  border-radius: 150px 0 0 50px;
+  right: -0.7rem;
+}
+
+.pip-boy__left-panel__rad-container {
+  position: absolute;
+  top: -2rem;
+  left: 2.5rem;
+  background: #3A5342;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 60px;
+}
+
+.pip-boy__left-panel__rad-meter {
+  position: absolute;
+  padding: 0.5rem;
+  width: 6rem;
+  height: 6rem;
+  background: #777D76;
+  overflow: hidden;
+  border-radius: 360px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+          transform: translate(-50%, -50%) rotate(-90deg);
+  z-index: 2;
+}
+
+.pip-boy__left-panel__rad-meter__scale {
+  position: absolute;
+  z-index: 2;
+  background: #4C2628;
+  border-radius: 360px;
+  width: 5.5rem;
+  height: 5.5rem;
+  left: 0.25rem;
+  top: 0.25rem;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.pip-boy__left-panel__rad-meter .rotate-bug-fix {
+  position: relative;
+  width: 6rem;
+  height: 11rem;
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+  right: 0.5rem;
+  margin-top: -1.5rem;
+  border-radius: 360px;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.pip-boy__left-panel__rad-meter__rectangle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #8F948E;
+  z-index: 4;
+  margin-top: -8rem;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.pip-boy__left-panel__rad-meter__half-circle {
+  position: absolute;
+  width: 4.75rem;
+  height: 5rem;
+  border-radius: 360px;
+  background: #bfc39e;
+  z-index: 3;
+  margin-top: -0.2rem;
+  margin-right: -0.5rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.pip-boy__left-panel__rad-meter__half-circle__square {
+  position: absolute;
+  width: 0.55rem;
+  height: 0.55rem;
+  background: #3A5342;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 1rem;
+  z-index: 2;
+  border-radius: 2px;
+}
+
+.pip-boy__left-panel__rad-meter__half-circle__pointer {
+  position: absolute;
+  width: 0.4rem;
+  height: 1.8rem;
+  background: #3A5342;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+.pip-boy__left-panel__switch {
+  position: absolute;
+  background: #777D76;
+  padding: 0.4rem;
+  border-radius: 360px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  bottom: 5rem;
+  left: 3rem;
+  z-index: 2;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.pip-boy__left-panel__switch__knob {
+  width: 4rem;
+  height: 4rem;
+  background-color: #2c3127;
+  border-radius: 360px;
+  z-index: 3;
+  position: relative;
+}
+
+.pip-boy__left-panel__switch__pointer {
+  width: 0.8rem;
+  height: 2.25rem;
+  border-radius: 0 0 7px 7px;
+  background-color: #2c3127;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
+          transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.pip-boy__left-panel__switch__pointer.opposed {
+  left: initial;
+  right: 50%;
+  top: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  z-index: 3;
+}
+
+.pip-boy__left-panel__switch__scale {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  z-index: 1;
+}
+
+.pip-boy__left-panel__switch__scale__half-circle {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 360px;
+  background: #777D76;
+  margin-top: -4.5rem;
+}
+
+.pip-boy__left-panel__wheel {
+  background: #435F4D;
+  padding: 0.25rem 1rem;
+  width: 3.5rem;
+  height: 12rem;
+  position: absolute;
+  border-radius: 10px;
+  z-index: 3;
+  right: -2rem;
+  bottom: 10rem;
+}
+
+.pip-boy__left-panel__wheel__wheel {
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  background: #635c41;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 10px;
+  max-height: 12rem;
+  overflow: scroll;
+}
+
+.pip-boy__left-panel__wheel__wheel::-webkit-scrollbar {
+  display: none;
+}
+
+.pip-boy__left-panel__wheel__wheel__bar {
+  width: 100%;
+  height: 0.45rem;
+  margin: 0.85rem 0;
+  background: #3d361e;
+}
+
+.pip-boy__left-panel__model {
+  position: absolute;
+  width: 95%;
+  height: 25%;
+  right: 0;
+  bottom: 45%;
+  background: #50765B;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.pip-boy__left-panel__model h1 {
+  font-size: 2rem;
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+  font-family: overseer-font;
+  letter-spacing: 4px;
+  color: #8F948E;
+}
+
+.pip-boy__left-panel__model__bar {
+  width: 100%;
+  height: 0.75rem;
+  background: #2c3127;
+}
+
+.pip-boy__left-panel__model__bar:last-of-type {
+  margin-bottom: 0.5rem;
+}
+
+.pip-boy__left-panel__overlay {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  background: #3a5342;
+  border-radius: 150px 0 0 110px;
+  z-index: 1;
+}
+
+.pip-boy__left-panel .screw-casing, .pip-boy__left-panel .screw-casing--long {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #50765B;
+  z-index: 3;
+  right: -1rem;
+  top: 1rem;
+  border-radius: 360px;
+}
+
+.pip-boy__left-panel .screw-casing--long {
+  right: -0.3rem;
+  top: initial;
+  bottom: 2rem;
+  height: 4rem;
+  border-radius: 0 0 360px 360px;
+  background-color: #50765B;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+}
+
+.pip-boy__left-panel .screw-casing--long .screw {
+  margin-bottom: -1rem;
+}
+
+.pip-boy__screen-casing {
+  background: #2e3f3a;
+  width: 45rem;
+  height: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: 90%;
+  position: relative;
+  border-radius: 30px;
+  border: 2rem solid #50765B;
+  z-index: 2;
+}
+
+.pip-boy__screen, .pip-boy__screen--stats, .pip-boy__screen--items, .pip-boy__screen--data {
+  background: #000000;
+  width: 92.5%;
+  height: 92.5%;
+  border-radius: 10px;
+  padding: 0.9rem 1.5rem 0.75rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2rem auto 2rem;
+      grid-template-rows: 2rem auto 2rem;
+  position: relative;
+  min-width: 550px;
+  overflow: hidden;
+}
+
+.pip-boy__screen__top-menu {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.pip-boy__screen__main-content, .pip-boy__screen--stats .pip-boy__screen__main-content--status, .pip-boy__screen--stats .pip-boy__screen__main-content--special, .pip-boy__screen--stats .pip-boy__screen__main-content--skills, .pip-boy__screen--stats .pip-boy__screen__main-content--perks, .pip-boy__screen--stats .pip-boy__screen__main-content--general, .pip-boy__screen--items .pip-boy__screen__main-content--weapons, .pip-boy__screen--items .pip-boy__screen__main-content--apparel, .pip-boy__screen--items .pip-boy__screen__main-content--aid, .pip-boy__screen--items .pip-boy__screen__main-content--misc, .pip-boy__screen--items .pip-boy__screen__main-content--ammo, .pip-boy__screen--data .pip-boy__screen__main-content--local-map, .pip-boy__screen--data .pip-boy__screen__main-content--world-map, .pip-boy__screen--data .pip-boy__screen__main-content--quests, .pip-boy__screen--data .pip-boy__screen__main-content--notes, .pip-boy__screen--data .pip-boy__screen__main-content--radio {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.pip-boy__screen__bottom-menu {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.pip-boy__screen__scan {
+  width: 100%;
+  height: 80px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(37, 216, 82, 0.4)));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(37, 216, 82, 0.4));
+  position: absolute;
+  -webkit-animation: scan;
+          animation: scan;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  top: -85px;
+  z-index: 2;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+@-webkit-keyframes scan {
+  0% {
+    top: -80px;
+  }
+  70% {
+    top: 490px;
+  }
+  100% {
+    top: 490px;
+  }
+}
+
+@keyframes scan {
+  0% {
+    top: -80px;
+  }
+  70% {
+    top: 490px;
+  }
+  100% {
+    top: 490px;
+  }
+}
+
+.pip-boy__screen__top-menu {
+  color: #25D852;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.pip-boy__screen__top-menu span {
+  width: 20px;
+  height: 29px;
+  border-top: 2px solid #25D852;
+  border-left: 2px solid #25D852;
+}
+
+.pip-boy__screen__top-menu h3 {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  -webkit-transform: translate(4px, -10px);
+          transform: translate(4px, -10px);
+}
+
+.pip-boy__screen__top-menu h4 {
+  border-top: 2px solid #25D852;
+  border-right: 2px solid rgba(37, 216, 82, 0.2);
+  padding: 4px 8px;
+}
+
+.pip-boy__screen__top-menu h4:first-of-type {
+  padding: 4px 8px 4px 18px;
+}
+
+.pip-boy__screen__top-menu h4:last-of-type {
+  border-right: 2px solid #25D852;
+}
+
+.pip-boy__screen__bottom-menu {
+  color: #25D852;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transform: translateY(-2.25rem);
+          transform: translateY(-2.25rem);
+}
+
+.pip-boy__screen__bottom-menu h3 {
+  font-size: 1.2rem;
+  padding: 0 6px;
+  border: 2px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.pip-boy__screen__bottom-menu h3:hover {
+  border: 2px solid rgba(37, 216, 82, 0.2);
+}
+
+.pip-boy__screen__bottom-menu h3.long-title {
+  min-width: 103px;
+}
+
+.pip-boy__screen__bottom-menu span {
+  width: 100%;
+  height: 29px;
+  border-bottom: 2px solid #25D852;
+  -webkit-transform: translateY(-12.5px);
+          transform: translateY(-12.5px);
+}
+
+.pip-boy__screen__bottom-menu span:first-of-type {
+  border-left: 2px solid #25D852;
+}
+
+.pip-boy__screen__bottom-menu span:last-of-type {
+  border-right: 2px solid #25D852;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content, .pip-boy__screen--stats .pip-boy__screen__main-content--status, .pip-boy__screen--stats .pip-boy__screen__main-content--special, .pip-boy__screen--stats .pip-boy__screen__main-content--skills, .pip-boy__screen--stats .pip-boy__screen__main-content--perks, .pip-boy__screen--stats .pip-boy__screen__main-content--general, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--weapons, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--weapons, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--apparel, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--apparel, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--aid, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--aid, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--misc, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--misc, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--ammo, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--ammo, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--local-map, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--local-map, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--world-map, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--world-map, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--quests, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--quests, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--notes, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--notes, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--radio, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--radio, .pip-boy__screen--items .pip-boy__screen__main-content, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--status, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--status, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--special, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--special, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--skills, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--skills, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--perks, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--perks, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--general, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--general, .pip-boy__screen--items .pip-boy__screen__main-content--weapons, .pip-boy__screen--items .pip-boy__screen__main-content--apparel, .pip-boy__screen--items .pip-boy__screen__main-content--aid, .pip-boy__screen--items .pip-boy__screen__main-content--misc, .pip-boy__screen--items .pip-boy__screen__main-content--ammo, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--local-map, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--local-map, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--world-map, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--world-map, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--quests, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--quests, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--notes, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--notes, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--radio, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--radio, .pip-boy__screen--data .pip-boy__screen__main-content, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--status, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--status, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--special, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--special, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--skills, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--skills, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--perks, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--perks, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--general, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--general, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--weapons, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--weapons, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--apparel, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--apparel, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--aid, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--aid, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--misc, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--misc, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--ammo, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--ammo, .pip-boy__screen--data .pip-boy__screen__main-content--local-map, .pip-boy__screen--data .pip-boy__screen__main-content--world-map, .pip-boy__screen--data .pip-boy__screen__main-content--quests, .pip-boy__screen--data .pip-boy__screen__main-content--notes, .pip-boy__screen--data .pip-boy__screen__main-content--radio {
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+  padding: 15px 30px;
+  max-height: 260px;
+  overflow-y: scroll;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content h4, .pip-boy__screen--stats .pip-boy__screen__main-content--status h4, .pip-boy__screen--stats .pip-boy__screen__main-content--special h4, .pip-boy__screen--stats .pip-boy__screen__main-content--skills h4, .pip-boy__screen--stats .pip-boy__screen__main-content--perks h4, .pip-boy__screen--stats .pip-boy__screen__main-content--general h4, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--weapons h4, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--weapons h4, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--apparel h4, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--apparel h4, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--aid h4, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--aid h4, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--misc h4, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--misc h4, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--ammo h4, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--ammo h4, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--local-map h4, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--local-map h4, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--world-map h4, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--world-map h4, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--quests h4, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--quests h4, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--notes h4, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--notes h4, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--radio h4, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--radio h4, .pip-boy__screen--items .pip-boy__screen__main-content h4, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--status h4, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--status h4, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--special h4, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--special h4, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--skills h4, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--skills h4, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--perks h4, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--perks h4, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--general h4, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--general h4, .pip-boy__screen--items .pip-boy__screen__main-content--weapons h4, .pip-boy__screen--items .pip-boy__screen__main-content--apparel h4, .pip-boy__screen--items .pip-boy__screen__main-content--aid h4, .pip-boy__screen--items .pip-boy__screen__main-content--misc h4, .pip-boy__screen--items .pip-boy__screen__main-content--ammo h4, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--local-map h4, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--local-map h4, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--world-map h4, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--world-map h4, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--quests h4, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--quests h4, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--notes h4, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--notes h4, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--radio h4, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--radio h4, .pip-boy__screen--data .pip-boy__screen__main-content h4, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--status h4, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--status h4, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--special h4, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--special h4, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--skills h4, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--skills h4, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--perks h4, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--perks h4, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--general h4, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--general h4, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--weapons h4, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--weapons h4, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--apparel h4, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--apparel h4, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--aid h4, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--aid h4, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--misc h4, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--misc h4, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--ammo h4, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--ammo h4, .pip-boy__screen--data .pip-boy__screen__main-content--local-map h4, .pip-boy__screen--data .pip-boy__screen__main-content--world-map h4, .pip-boy__screen--data .pip-boy__screen__main-content--quests h4, .pip-boy__screen--data .pip-boy__screen__main-content--notes h4, .pip-boy__screen--data .pip-boy__screen__main-content--radio h4 {
+  font-size: 1rem;
+  color: #25D852;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content h4:hover, .pip-boy__screen--stats .pip-boy__screen__main-content--status h4:hover, .pip-boy__screen--stats .pip-boy__screen__main-content--special h4:hover, .pip-boy__screen--stats .pip-boy__screen__main-content--skills h4:hover, .pip-boy__screen--stats .pip-boy__screen__main-content--perks h4:hover, .pip-boy__screen--stats .pip-boy__screen__main-content--general h4:hover, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--weapons h4:hover, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--weapons h4:hover, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--apparel h4:hover, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--apparel h4:hover, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--aid h4:hover, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--aid h4:hover, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--misc h4:hover, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--misc h4:hover, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--ammo h4:hover, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--ammo h4:hover, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--local-map h4:hover, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--local-map h4:hover, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--world-map h4:hover, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--world-map h4:hover, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--quests h4:hover, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--quests h4:hover, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--notes h4:hover, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--notes h4:hover, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--radio h4:hover, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--radio h4:hover, .pip-boy__screen--items .pip-boy__screen__main-content h4:hover, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--status h4:hover, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--status h4:hover, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--special h4:hover, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--special h4:hover, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--skills h4:hover, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--skills h4:hover, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--perks h4:hover, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--perks h4:hover, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--general h4:hover, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--general h4:hover, .pip-boy__screen--items .pip-boy__screen__main-content--weapons h4:hover, .pip-boy__screen--items .pip-boy__screen__main-content--apparel h4:hover, .pip-boy__screen--items .pip-boy__screen__main-content--aid h4:hover, .pip-boy__screen--items .pip-boy__screen__main-content--misc h4:hover, .pip-boy__screen--items .pip-boy__screen__main-content--ammo h4:hover, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--local-map h4:hover, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--local-map h4:hover, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--world-map h4:hover, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--world-map h4:hover, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--quests h4:hover, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--quests h4:hover, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--notes h4:hover, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--notes h4:hover, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--radio h4:hover, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--radio h4:hover, .pip-boy__screen--data .pip-boy__screen__main-content h4:hover, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--status h4:hover, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--status h4:hover, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--special h4:hover, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--special h4:hover, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--skills h4:hover, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--skills h4:hover, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--perks h4:hover, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--perks h4:hover, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--general h4:hover, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--general h4:hover, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--weapons h4:hover, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--weapons h4:hover, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--apparel h4:hover, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--apparel h4:hover, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--aid h4:hover, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--aid h4:hover, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--misc h4:hover, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--misc h4:hover, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--ammo h4:hover, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--ammo h4:hover, .pip-boy__screen--data .pip-boy__screen__main-content--local-map h4:hover, .pip-boy__screen--data .pip-boy__screen__main-content--world-map h4:hover, .pip-boy__screen--data .pip-boy__screen__main-content--quests h4:hover, .pip-boy__screen--data .pip-boy__screen__main-content--notes h4:hover, .pip-boy__screen--data .pip-boy__screen__main-content--radio h4:hover {
+  cursor: default;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen__main-content--status::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen__main-content--special::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen__main-content--skills::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen__main-content--perks::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen__main-content--general::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--weapons::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--weapons::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--apparel::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--apparel::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--aid::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--aid::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--misc::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--misc::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--ammo::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--ammo::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--local-map::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--local-map::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--world-map::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--world-map::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--quests::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--quests::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--notes::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--notes::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--radio::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--radio::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen__main-content::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--status::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--status::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--special::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--special::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--skills::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--skills::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--perks::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--perks::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--stats .pip-boy__screen__main-content--general::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--items .pip-boy__screen__main-content--general::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen__main-content--weapons::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen__main-content--apparel::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen__main-content--aid::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen__main-content--misc::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen__main-content--ammo::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--local-map::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--local-map::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--world-map::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--world-map::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--quests::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--quests::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--notes::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--notes::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--radio::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--radio::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen__main-content::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--status::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--status::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--special::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--special::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--skills::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--skills::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--perks::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--perks::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--general::-webkit-scrollbar, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--general::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--weapons::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--weapons::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--apparel::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--apparel::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--aid::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--aid::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--misc::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--misc::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--ammo::-webkit-scrollbar, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--ammo::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen__main-content--local-map::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen__main-content--world-map::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen__main-content--quests::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen__main-content--notes::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen__main-content--radio::-webkit-scrollbar {
+  display: none;
+}
+
+.pip-boy__screen--stats {
+  display: -ms-grid;
+  display: grid;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--status img {
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  width: 140px;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--status__health-bar {
+  width: 3rem;
+  height: 0.75rem;
+  background: #25D852;
+  border: 3px solid #000;
+  outline: 2px solid #25D852;
+  position: absolute;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--status__health-bar::after {
+  content: "......";
+  background: #000;
+  color: #000;
+  position: relative;
+  top: 0.5rem;
+  z-index: 2;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--status__health-bar:nth-of-type(1) {
+  left: 26%;
+  bottom: 28%;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--status__health-bar:nth-of-type(2) {
+  right: 26%;
+  bottom: 28%;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--status__health-bar:nth-of-type(3) {
+  left: 26%;
+  top: 40%;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--status__health-bar:nth-of-type(4) {
+  right: 26%;
+  top: 40%;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--status__health-bar:nth-of-type(5) {
+  left: 49.5%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 9%;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--special {
+  display: none;
+  position: relative;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--special__desc, .pip-boy__screen--stats .pip-boy__screen__main-content--skills__desc, .pip-boy__screen--stats .pip-boy__screen__main-content--perks__desc {
+  display: none;
+  position: absolute;
+  width: 50%;
+  right: 0;
+  bottom: 0;
+  padding-top: 0.5rem;
+  border-top: 2px solid #25D852;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--special__desc h5, .pip-boy__screen--stats .pip-boy__screen__main-content--skills__desc h5, .pip-boy__screen--stats .pip-boy__screen__main-content--perks__desc h5 {
+  font-size: 1rem;
+  color: #25D852;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--special__stat, .pip-boy__screen--stats .pip-boy__screen__main-content--skills__stat, .pip-boy__screen--stats .pip-boy__screen__main-content--perks__stat, .pip-boy__screen--stats .pip-boy__screen__main-content--general__stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.1rem;
+  padding: 4px 8px;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--special__stat:hover, .pip-boy__screen--stats .pip-boy__screen__main-content--skills__stat:hover, .pip-boy__screen--stats .pip-boy__screen__main-content--perks__stat:hover, .pip-boy__screen--stats .pip-boy__screen__main-content--general__stat:hover {
+  border: 2px solid rgba(37, 216, 82, 0.2);
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--special__stat:hover + div, .pip-boy__screen--stats .pip-boy__screen__main-content--skills__stat:hover + div, .pip-boy__screen--stats .pip-boy__screen__main-content--perks__stat:hover + div, .pip-boy__screen--stats .pip-boy__screen__main-content--general__stat:hover + div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--skills, .pip-boy__screen--stats .pip-boy__screen__main-content--perks {
+  display: none;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--general {
+  display: none;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--general__stat {
+  width: 55%;
+}
+
+.pip-boy__screen--stats .pip-boy__screen__main-content--general img {
+  position: absolute;
+  width: 25%;
+  right: 10%;
+  bottom: 50%;
+  -webkit-transform: translateY(55%);
+          transform: translateY(55%);
+  -webkit-filter: brightness(0.65);
+          filter: brightness(0.65);
+}
+
+.pip-boy__screen--items {
+  display: none;
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--weapons {
+  display: block;
+  position: relative;
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--weapons__desc, .pip-boy__screen--items .pip-boy__screen__main-content--weapons__desc--detailed, .pip-boy__screen--items .pip-boy__screen__main-content--apparel__desc--detailed, .pip-boy__screen--items .pip-boy__screen__main-content--aid__desc--detailed, .pip-boy__screen--items .pip-boy__screen__main-content--misc__desc--detailed, .pip-boy__screen--items .pip-boy__screen__main-content--ammo__desc--detailed {
+  display: none;
+  position: absolute;
+  width: 50%;
+  right: 0;
+  bottom: 0;
+  padding-top: 0.5rem;
+  border-top: 2px solid #25D852;
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--weapons__desc h5, .pip-boy__screen--items .pip-boy__screen__main-content--weapons__desc--detailed h5, .pip-boy__screen--items .pip-boy__screen__main-content--apparel__desc--detailed h5, .pip-boy__screen--items .pip-boy__screen__main-content--aid__desc--detailed h5, .pip-boy__screen--items .pip-boy__screen__main-content--misc__desc--detailed h5, .pip-boy__screen--items .pip-boy__screen__main-content--ammo__desc--detailed h5 {
+  font-size: 1rem;
+  color: #25D852;
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--weapons__desc--detailed, .pip-boy__screen--items .pip-boy__screen__main-content--apparel__desc--detailed, .pip-boy__screen--items .pip-boy__screen__main-content--aid__desc--detailed, .pip-boy__screen--items .pip-boy__screen__main-content--misc__desc--detailed, .pip-boy__screen--items .pip-boy__screen__main-content--ammo__desc--detailed {
+  display: none;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  row-gap: 0.75rem;
+  border-top: none;
+  bottom: 2rem;
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--weapons__desc--detailed div, .pip-boy__screen--items .pip-boy__screen__main-content--apparel__desc--detailed div, .pip-boy__screen--items .pip-boy__screen__main-content--aid__desc--detailed div, .pip-boy__screen--items .pip-boy__screen__main-content--misc__desc--detailed div, .pip-boy__screen--items .pip-boy__screen__main-content--ammo__desc--detailed div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 2px solid #25D852;
+  border-right: 2px solid rgba(37, 216, 82, 0.2);
+  padding: 4px 4px 0;
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--weapons__desc--detailed div:last-of-type, .pip-boy__screen--items .pip-boy__screen__main-content--apparel__desc--detailed div:last-of-type, .pip-boy__screen--items .pip-boy__screen__main-content--aid__desc--detailed div:last-of-type, .pip-boy__screen--items .pip-boy__screen__main-content--misc__desc--detailed div:last-of-type, .pip-boy__screen--items .pip-boy__screen__main-content--ammo__desc--detailed div:last-of-type {
+  grid-column: span 2;
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--weapons__desc--detailed div span, .pip-boy__screen--items .pip-boy__screen__main-content--apparel__desc--detailed div span, .pip-boy__screen--items .pip-boy__screen__main-content--aid__desc--detailed div span, .pip-boy__screen--items .pip-boy__screen__main-content--misc__desc--detailed div span, .pip-boy__screen--items .pip-boy__screen__main-content--ammo__desc--detailed div span {
+  width: 2.25rem;
+  height: 0.75rem;
+  background: #25D852;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--weapons__desc--detailed div span div, .pip-boy__screen--items .pip-boy__screen__main-content--apparel__desc--detailed div span div, .pip-boy__screen--items .pip-boy__screen__main-content--aid__desc--detailed div span div, .pip-boy__screen--items .pip-boy__screen__main-content--misc__desc--detailed div span div, .pip-boy__screen--items .pip-boy__screen__main-content--ammo__desc--detailed div span div {
+  height: 1rem;
+  width: 1.75rem;
+  background: #000;
+  position: absolute;
+  right: -0.2rem;
+  top: -0.2rem;
+  opacity: 0.7;
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--weapons__stat, .pip-boy__screen--items .pip-boy__screen__main-content--weapons__stat--detailed, .pip-boy__screen--items .pip-boy__screen__main-content--apparel__stat--detailed, .pip-boy__screen--items .pip-boy__screen__main-content--aid__stat--detailed, .pip-boy__screen--items .pip-boy__screen__main-content--misc__stat--detailed, .pip-boy__screen--items .pip-boy__screen__main-content--ammo__stat--detailed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.1rem;
+  padding: 4px 8px;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--weapons__stat:hover, .pip-boy__screen--items .pip-boy__screen__main-content--weapons__stat--detailed:hover, .pip-boy__screen--items .pip-boy__screen__main-content--apparel__stat--detailed:hover, .pip-boy__screen--items .pip-boy__screen__main-content--aid__stat--detailed:hover, .pip-boy__screen--items .pip-boy__screen__main-content--misc__stat--detailed:hover, .pip-boy__screen--items .pip-boy__screen__main-content--ammo__stat--detailed:hover {
+  border: 2px solid rgba(37, 216, 82, 0.2);
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--weapons__stat:hover + div, .pip-boy__screen--items .pip-boy__screen__main-content--weapons__stat--detailed:hover + div, .pip-boy__screen--items .pip-boy__screen__main-content--apparel__stat--detailed:hover + div, .pip-boy__screen--items .pip-boy__screen__main-content--aid__stat--detailed:hover + div, .pip-boy__screen--items .pip-boy__screen__main-content--misc__stat--detailed:hover + div, .pip-boy__screen--items .pip-boy__screen__main-content--ammo__stat--detailed:hover + div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--weapons__stat--detailed, .pip-boy__screen--items .pip-boy__screen__main-content--apparel__stat--detailed, .pip-boy__screen--items .pip-boy__screen__main-content--aid__stat--detailed, .pip-boy__screen--items .pip-boy__screen__main-content--misc__stat--detailed, .pip-boy__screen--items .pip-boy__screen__main-content--ammo__stat--detailed {
+  width: 45%;
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--weapons__stat--detailed:hover + div, .pip-boy__screen--items .pip-boy__screen__main-content--apparel__stat--detailed:hover + div, .pip-boy__screen--items .pip-boy__screen__main-content--aid__stat--detailed:hover + div, .pip-boy__screen--items .pip-boy__screen__main-content--misc__stat--detailed:hover + div, .pip-boy__screen--items .pip-boy__screen__main-content--ammo__stat--detailed:hover + div {
+  display: -ms-grid;
+  display: grid;
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--apparel, .pip-boy__screen--items .pip-boy__screen__main-content--aid, .pip-boy__screen--items .pip-boy__screen__main-content--misc, .pip-boy__screen--items .pip-boy__screen__main-content--ammo {
+  display: none;
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--apparel__desc--detailed div:last-of-type {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  grid-column: span 3;
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--aid__desc--detailed div:first-of-type, .pip-boy__screen--items .pip-boy__screen__main-content--misc__desc--detailed div:first-of-type, .pip-boy__screen--items .pip-boy__screen__main-content--ammo__desc--detailed div:first-of-type {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--aid__desc--detailed div:last-of-type, .pip-boy__screen--items .pip-boy__screen__main-content--misc__desc--detailed div:last-of-type, .pip-boy__screen--items .pip-boy__screen__main-content--ammo__desc--detailed div:last-of-type {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  grid-column: span 3;
+}
+
+.pip-boy__screen--items .pip-boy__screen__main-content--misc__desc--detailed div:last-of-type, .pip-boy__screen--items .pip-boy__screen__main-content--ammo__desc--detailed div:last-of-type {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.pip-boy__screen--data {
+  display: none;
+}
+
+.pip-boy__screen--data .pip-boy__screen__top-menu h4:first-of-type {
+  padding-left: 50px;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content h2, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--status h2, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--status h2, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--special h2, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--special h2, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--skills h2, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--skills h2, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--perks h2, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--perks h2, .pip-boy__screen--data .pip-boy__screen--stats .pip-boy__screen__main-content--general h2, .pip-boy__screen--stats .pip-boy__screen--data .pip-boy__screen__main-content--general h2, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--weapons h2, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--weapons h2, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--apparel h2, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--apparel h2, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--aid h2, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--aid h2, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--misc h2, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--misc h2, .pip-boy__screen--data .pip-boy__screen--items .pip-boy__screen__main-content--ammo h2, .pip-boy__screen--items .pip-boy__screen--data .pip-boy__screen__main-content--ammo h2, .pip-boy__screen--data .pip-boy__screen__main-content--local-map h2, .pip-boy__screen--data .pip-boy__screen__main-content--world-map h2, .pip-boy__screen--data .pip-boy__screen__main-content--quests h2, .pip-boy__screen--data .pip-boy__screen__main-content--notes h2, .pip-boy__screen--data .pip-boy__screen__main-content--radio h2 {
+  color: #25D852;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--local-map {
+  display: none;
+  position: relative;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--world-map, .pip-boy__screen--data .pip-boy__screen__main-content--quests, .pip-boy__screen--data .pip-boy__screen__main-content--notes, .pip-boy__screen--data .pip-boy__screen__main-content--radio {
+  display: none;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--world-map__stat, .pip-boy__screen--data .pip-boy__screen__main-content--quests__stat, .pip-boy__screen--data .pip-boy__screen__main-content--notes__stat, .pip-boy__screen--data .pip-boy__screen__main-content--radio__stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.1rem;
+  padding: 4px 8px;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--world-map__stat:hover, .pip-boy__screen--data .pip-boy__screen__main-content--quests__stat:hover, .pip-boy__screen--data .pip-boy__screen__main-content--notes__stat:hover, .pip-boy__screen--data .pip-boy__screen__main-content--radio__stat:hover {
+  border: 2px solid rgba(37, 216, 82, 0.2);
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--world-map__stat:hover + div, .pip-boy__screen--data .pip-boy__screen__main-content--quests__stat:hover + div, .pip-boy__screen--data .pip-boy__screen__main-content--notes__stat:hover + div, .pip-boy__screen--data .pip-boy__screen__main-content--radio__stat:hover + div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--world-map__desc, .pip-boy__screen--data .pip-boy__screen__main-content--quests__desc, .pip-boy__screen--data .pip-boy__screen__main-content--notes__desc, .pip-boy__screen--data .pip-boy__screen__main-content--radio__desc {
+  display: none;
+  position: absolute;
+  width: 55%;
+  right: 0;
+  bottom: 0;
+  padding-top: 0.5rem;
+  border-top: 2px solid #25D852;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--world-map__desc h5, .pip-boy__screen--data .pip-boy__screen__main-content--quests__desc h5, .pip-boy__screen--data .pip-boy__screen__main-content--notes__desc h5, .pip-boy__screen--data .pip-boy__screen__main-content--radio__desc h5 {
+  font-size: 1rem;
+  color: #25D852;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--quests__desc, .pip-boy__screen--data .pip-boy__screen__main-content--notes__desc {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 300px;
+  overflow: scroll;
+  top: 2rem;
+  border-top: 0;
+  z-index: 2;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--quests__desc::-webkit-scrollbar, .pip-boy__screen--data .pip-boy__screen__main-content--notes__desc::-webkit-scrollbar {
+  display: none;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--quests__desc h5, .pip-boy__screen--data .pip-boy__screen__main-content--notes__desc h5 {
+  padding-bottom: 0.75rem;
+  padding-left: 2rem;
+  opacity: 0.4;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--quests__desc h5:first-of-type, .pip-boy__screen--data .pip-boy__screen__main-content--notes__desc h5:first-of-type {
+  opacity: 1;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--quests__desc h5:first-of-type::before, .pip-boy__screen--data .pip-boy__screen__main-content--notes__desc h5:first-of-type::before {
+  background: #000;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--quests__desc h5::before, .pip-boy__screen--data .pip-boy__screen__main-content--notes__desc h5::before {
+  content: ".";
+  left: 0rem;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  background: #25D852;
+  border: 1px solid #25D852;
+  color: rgba(0, 0, 0, 0);
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--quests__desc h5:last-of-type, .pip-boy__screen--data .pip-boy__screen__main-content--notes__desc h5:last-of-type {
+  padding-bottom: 0;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--notes h5::before {
+  content: "";
+  display: none;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--radio__stat {
+  width: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--radio__signal {
+  position: absolute;
+  width: 13rem;
+  right: 0;
+  bottom: 1.5rem;
+  height: 13rem;
+  border-right: 2px solid #25D852;
+  border-bottom: 2px solid #25D852;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--radio__signal__line {
+  position: absolute;
+  top: 3rem;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--radio__signal__bar {
+  width: 2px;
+  height: 0.75rem;
+  background: #25D852;
+  opacity: 0.6;
+  position: absolute;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--radio__signal__bar:nth-of-type(1), .pip-boy__screen--data .pip-boy__screen__main-content--radio__signal__bar:nth-of-type(2), .pip-boy__screen--data .pip-boy__screen__main-content--radio__signal__bar:nth-of-type(3), .pip-boy__screen--data .pip-boy__screen__main-content--radio__signal__bar:nth-of-type(4) {
+  bottom: 0;
+  -webkit-transform: translateX(1.5rem);
+          transform: translateX(1.5rem);
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--radio__signal__bar:nth-of-type(2) {
+  left: 25%;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--radio__signal__bar:nth-of-type(3) {
+  left: 50%;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--radio__signal__bar:nth-of-type(4) {
+  left: 75%;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--radio__signal__bar:nth-of-type(5), .pip-boy__screen--data .pip-boy__screen__main-content--radio__signal__bar:nth-of-type(6), .pip-boy__screen--data .pip-boy__screen__main-content--radio__signal__bar:nth-of-type(7), .pip-boy__screen--data .pip-boy__screen__main-content--radio__signal__bar:nth-of-type(8) {
+  right: 0;
+  width: 0.75rem;
+  height: 2px;
+  -webkit-transform: translateY(1.5rem);
+          transform: translateY(1.5rem);
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--radio__signal__bar:nth-of-type(6) {
+  top: 25%;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--radio__signal__bar:nth-of-type(7) {
+  top: 50%;
+}
+
+.pip-boy__screen--data .pip-boy__screen__main-content--radio__signal__bar:nth-of-type(8) {
+  top: 75%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: pip-boy-font;
+  src: url(./../monofonto.otf);
+}
+
+@font-face {
+  font-family: overseer-font;
+  src: url(./../overseer.ttf);
+}
+
+body {
+  font-family: pip-boy-font;
+  color: #D7D7C9;
+  background: #161616;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161616;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #293d2f;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #293d2fe1;
+}
+
+.knobRotate {
+  position: relative;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+  z-index: 3;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.radRotate {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  top: 25%;
+  left: 29%;
+  display: inline-block;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.pip-boy-container {
+  position: relative;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .pip-boy-container {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+.pip-boy {
+  min-width: 57rem;
+  height: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: flex-start;
+  margin: 0;
+  position: relative;
+  left: 0.5rem;
+  bottom: 2rem;
+}
+
+.pip-boy__bottom-menu {
+  position: absolute;
+  background: #3A5342;
+  width: 50%;
+  height: 30%;
+  bottom: -5rem;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 1rem solid #777D76;
+  border-top: none;
+  border-bottom: none;
+  z-index: 2;
+}
+
+.pip-boy__bottom-menu__button {
+  width: 3.5rem;
+  height: 3.5rem;
+  position: relative;
+  background: #777D76;
+  border-radius: 360px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: -1.5rem;
+}
+
+.pip-boy__bottom-menu__button:first-of-type .pip-boy__bottom-menu__button__button {
+  background: #FF4D02;
+}
+
+.pip-boy__bottom-menu__button h2 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -2rem);
+          transform: translate(-50%, -2rem);
+}
+
+.pip-boy__bottom-menu__button__button {
+  background: #6A2A13;
+  width: 70%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 360px;
+  position: absolute;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.pip-boy__bottom-menu__horizontal-bar {
+  position: absolute;
+  width: 100%;
+  height: 1rem;
+  bottom: -1rem;
+  left: 0;
+  background: #777D76;
+  border-radius: 0 0 2px 2px;
+}
+
+.pip-boy__bottom-menu__vertical-bar {
+  position: absolute;
+  width: 1rem;
+  height: 3rem;
+  left: 0;
+  bottom: -0.25rem;
+  background: #777D76;
+  border-radius: 0 20px 0 0;
+}
+
+.pip-boy__bottom-menu__vertical-bar.opposed {
+  left: initial;
+  right: 0;
+  border-radius: 20px 0 0 0;
+}
+/*# sourceMappingURL=main.css.map */

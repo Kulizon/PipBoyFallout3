@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pip-Boy</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="favicon.ico"/>
+  </head>
+  <body>
+    <div class="pip-boy-container">
+      <div class="pip-boy">
+        <div class="pip-boy__left-panel">
+          <div class="pip-boy__left-panel__rad-container">
+            <div class="pip-boy__left-panel__rad-meter">
+              <div class="pip-boy__left-panel__rad-meter__scale"></div>
+              <div class="rotate-bug-fix">
+                <div class="pip-boy__left-panel__rad-meter__rectangle"></div>
+              </div>
+              <div class="pip-boy__left-panel__rad-meter__half-circle">
+                <div class="radRotate">
+                  <div class="pip-boy__left-panel__rad-meter__half-circle__square"></div>
+                  <div class="pip-boy__left-panel__rad-meter__half-circle__pointer"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pip-boy__left-panel__switch">
+            <div class="knobRotate">
+              <div class="pip-boy__left-panel__switch__knob"></div>
+              <div class="pip-boy__left-panel__switch__pointer"></div>
+              <div class="pip-boy__left-panel__switch__pointer opposed"></div>
+            </div>
+            <div class="pip-boy__left-panel__switch__scale">
+              <div class="pip-boy__left-panel__switch__scale__half-circle"></div>
+            </div>
+          </div>
+
+          <div class="pip-boy__left-panel__wheel">
+            <div class="pip-boy__left-panel__wheel__wheel">
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+              <div class="pip-boy__left-panel__wheel__wheel__bar"></div>
+            </div>
+          </div>
+
+          <div class="pip-boy__left-panel__model">
+            <h1>Pip-Boy</h1>
+            <div class="pip-boy__left-panel__model__bar"></div>
+            <div class="pip-boy__left-panel__model__bar"></div>
+            <div class="pip-boy__left-panel__model__bar"></div>
+          </div>
+
+          <div class="screw-casing">
+            <div class="screw">
+              <div class="screw__bar"></div>
+              <div class="screw__bar"></div>
+            </div>
+          </div>
+
+          <div class="screw-casing--long">
+            <div class="screw">
+              <div class="screw__bar"></div>
+              <div class="screw__bar"></div>
+            </div>
+          </div>
+
+          <div class="pip-boy__left-panel__overlay"></div>
+        </div>
+
+        <div class="pip-boy__screen-casing">
+          
+          <div class="pip-boy__screen--stats">
+            <div class="pip-boy__screen__scan"></div>
+            <div class="pip-boy__screen__top-menu">
+              <span></span>
+              <h3>STATS</h3>
+              <h4>LVL 16</h4>
+              <h4>HP 321/400</h4>
+              <h4>AP 98/98</h4>
+              <h4>XP 18032/21200</h4>
+            </div>
+
+            <div class="pip-boy__screen__main-content--status">
+              <img src="images/vaultboy.gif" alt="Vault Boy" />
+              <div class="pip-boy__screen__main-content--status__health-bar"></div>
+              <div class="pip-boy__screen__main-content--status__health-bar"></div>
+              <div class="pip-boy__screen__main-content--status__health-bar"></div>
+              <div class="pip-boy__screen__main-content--status__health-bar"></div>
+              <div class="pip-boy__screen__main-content--status__health-bar"></div>
+            </div>
+
+            <div class="pip-boy__screen__main-content--special">
+              <div class="pip-boy__screen__main-content--special__stat">
+                <h4>Strength</h4>
+                <h4>9</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--special__desc">
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et interdum libero. Vivamus elementum elementum maximus.</h5>
+              </div>
+              <div class="pip-boy__screen__main-content--special__stat">
+                <h4>Perception</h4>
+                <h4>6</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--special__desc">
+                <h5>Aenean id ante non velit varius consequat sit amet at felis. Ut commodo lorem.Nulla vehicula turpis laoreet tellus interdum auctor. Sed nec urna sed mi condimentum convallis.</h5>
+              </div>
+              <div class="pip-boy__screen__main-content--special__stat">
+                <h4>Endurance</h4>
+                <h4>8</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--special__desc">
+                <h5>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris auctor, nisl et convallis feugiat, ligula erat tempus tortor.</h5>
+              </div>
+              <div class="pip-boy__screen__main-content--special__stat">
+                <h4>Charisma</h4>
+                <h4>10</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--special__desc">
+                <h5>Mauris fringilla nunc eu erat venenatis, ornare scelerisque diam facilisis. Vestibulum aliquam vitae erat nec pretium. In tincidunt sollicitudin justo. Elementum quam euismod vitae.</h5>
+              </div>
+              <div class="pip-boy__screen__main-content--special__stat">
+                <h4>Intelligence</h4>
+                <h4>4</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--special__desc">
+                <h5>Nunc blandit dapibus hendrerit. Praesent ac tellus condimentum. Donec nec nisl in lorem blandit pellentesque. Etiam sed nibh dui.</h5>
+              </div>
+              <div class="pip-boy__screen__main-content--special__stat">
+                <h4>Agility</h4>
+                <h4>5</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--special__desc">
+                <h5>Maecenas varius, magna sed ullamcorper gravida, lorem risus malesuada magna, non fermentum mauris est id est.</h5>
+              </div>
+              <div class="pip-boy__screen__main-content--special__stat">
+                <h4>Luck</h4>
+                <h4>9</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--special__desc">
+                <h5>Donec imperdiet faucibus pellentesque. In hac habitasse platea dictumst.</h5>
+              </div>
+            </div>
+
+            <div class="pip-boy__screen__main-content--skills">
+              <div class="pip-boy__screen__main-content--skills__stat">
+                <h4>Barter</h4>
+                <h4>36</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--skills__desc">
+                <h5>Aliquam eleifend tellus nisl, ac aliquam orci eleifend non. Integer dolor arcu, scelerisque sit amet pretium sed, efficitur eu augue. Morbi ultrices nulla enim.</h5>
+              </div>
+              <div class="pip-boy__screen__main-content--skills__stat">
+                <h4>Big Guns</h4>
+                <h4>15</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--skills__desc">
+                <h5>Sed mi nisl, porta id nunc a, fringilla vehicula orci. Duis ut justo ante. Sed vel malesuada sem, nec blandit leo.</h5>
+              </div>
+            </div>
+
+            <div class="pip-boy__screen__main-content--perks">
+              <div class="pip-boy__screen__main-content--perks__stat">
+                <h4>Action Boy</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--perks__desc">
+                <h5>Aliquam eleifend tellus nisl, ac aliquam orci eleifend non. Integer dolor arcu, scelerisque sit amet pretium sed, efficitur eu augue. Morbi ultrices nulla enim.</h5>
+              </div>
+              <div class="pip-boy__screen__main-content--perks__stat">
+                <h4>Animal Friend</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--perks__desc">
+                <h5>Sed mi nisl, porta id nunc a, fringilla vehicula orci. Duis ut justo ante. Sed vel malesuada sem, nec blandit leo.</h5>
+              </div>
+            </div>
+
+            <div class="pip-boy__screen__main-content--general">
+              <img src="images/vaultboy-general.gif" alt="Vault Boy" />
+              <div class="pip-boy__screen__main-content--general__stat">
+                <h4>Quest Completed</h4>
+                <h4>20</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--general__stat">
+                <h4>Locations Discovered:</h4>
+                <h4>45</h4>
+              </div>
+            </div>
+
+            <div class="pip-boy__screen__bottom-menu">
+              <span></span>
+              <h3>Status</h3>
+              <span></span>
+              <h3>S.P.E.C.I.A.L.</h3>
+              <span></span>
+              <h3>Skills</h3>
+              <span></span>
+              <h3>Perks</h3>
+              <span></span>
+              <h3>General</h3>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="pip-boy__screen--items">
+            <div class="pip-boy__screen__scan"></div>
+            <div class="pip-boy__screen__top-menu">
+              <span></span>
+              <h3>ITEMS</h3>
+              <h4>WG 7/270</h4>
+              <h4>HP 321/400</h4>
+              <h4>DR 0</h4>
+              <h4>CAPS 1897</h4>
+            </div>
+
+            <div class="pip-boy__screen__main-content--weapons">
+              <div class="pip-boy__screen__main-content--weapons__stat--detailed">
+                <h4>10mm Submachine Gun</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--weapons__desc--detailed">
+                <div>
+                  <h5>DMG</h5>
+                  <h5>17</h5>
+                </div>
+                <div>
+                  <h5>WG</h5>
+                  <h5>5</h5>
+                </div>
+                <div>
+                  <h5>VAL</h5>
+                  <h5>50</h5>
+                </div>
+                <div>
+                  <h5>CND</h5>
+                  <span><div></div></span>
+                </div>
+                <div>
+                  <h5>10mm (30/76)</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="pip-boy__screen__main-content--apparel">
+              <div class="pip-boy__screen__main-content--apparel__stat--detailed">
+                <h4>Recon Armor</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--apparel__desc--detailed">
+                <div>
+                  <h5>DR</h5>
+                  <h5>8</h5>
+                </div>
+                <div>
+                  <h5>WG</h5>
+                  <h5>3</h5>
+                </div>
+                <div>
+                  <h5>VAL</h5>
+                  <h5>8</h5>
+                </div>
+                <div>
+                  <h5>CND</h5>
+                  <span><div></div></span>
+                </div>
+                <div>
+                  <h5>EFFECTS</h5>
+                  <h5>Sm. Guns. +5</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="pip-boy__screen__main-content--aid">
+              <div class="pip-boy__screen__main-content--aid__stat--detailed">
+                <h4>Blood Pack</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--aid__desc--detailed">
+                <div>
+                  <h5>WG</h5>
+                  <h5>1</h5>
+                </div>
+                <div>
+                  <h5>VAL</h5>
+                  <h5>5</h5>
+                </div>
+                <div>
+                  <h5>EFFECTS</h5>
+                  <h5>HP +20</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="pip-boy__screen__main-content--misc">
+              <div class="pip-boy__screen__main-content--misc__stat--detailed">
+                <h4>Bobby Pin</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--misc__desc--detailed">
+                <div>
+                  <h5>WG</h5>
+                  <h5>--</h5>
+                </div>
+                <div>
+                  <h5>VAL</h5>
+                  <h5>1</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="pip-boy__screen__main-content--ammo">
+              <div class="pip-boy__screen__main-content--ammo__stat--detailed">
+                <h4>10mm Round (106)</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--ammo__desc--detailed">
+                <div>
+                  <h5>WG</h5>
+                  <h5>--</h5>
+                </div>
+                <div>
+                  <h5>VAL</h5>
+                  <h5>1</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="pip-boy__screen__bottom-menu">
+              <span></span>
+              <h3>Weapons</h3>
+              <span></span>
+              <h3>Apparel</h3>
+              <span></span>
+              <h3>Aid</h3>
+              <span></span>
+              <h3>Misc</h3>
+              <span></span>
+              <h3>Ammo</h3>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="pip-boy__screen--data">
+            <div class="pip-boy__screen__scan"></div>
+            <div class="pip-boy__screen__top-menu">
+              <span></span>
+              <h3>DATA</h3>
+              <h4>The Capital Wasteland</h4>
+              <h4 id="currentTime">09.18.77, 13:18</h4>
+            </div>
+
+            <div class="pip-boy__screen__main-content--local-map">
+              <h2>No Local Map Data</h2>
+              <img src="" alt="" />
+            </div>
+
+            <div class="pip-boy__screen__main-content--world-map">
+              <h2>No World Map Data</h2>
+              <img src="" alt="" />
+            </div>
+
+            <div class="pip-boy__screen__main-content--quests">
+              <div class="pip-boy__screen__main-content--quests__stat">
+                <h4>Escape!</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--quests__desc">
+                <h5>Escape the Vault.</h5>
+                <h5>Open the Vault door.</h5>
+                <h5>Turn the power back on.</h5>
+                <h5>Enter the Overseer's office.</h5>
+                <h5>Talk to Amata about her plan to escape the Vault.</h5> 
+              </div>
+            </div>
+
+            <div class="pip-boy__screen__main-content--notes">
+              <div class="pip-boy__screen__main-content--notes__stat">
+                <h4>Raid Plans</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--notes__desc">
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat ultrices lorem, et convallis lacus tempor porttitor. Donec hendrerit, massa nec.</h5>
+              </div>
+            </div>
+
+            <div class="pip-boy__screen__main-content--radio">
+              <div class="pip-boy__screen__main-content--radio__stat">
+                <h4>Galaxy News Radio</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--radio__stat">
+                <h4>People's Republic of America Radio</h4>
+              </div>
+              <div class="pip-boy__screen__main-content--radio__signal">
+                <div class="pip-boy__screen__main-content--radio__signal__bar"></div>
+                <div class="pip-boy__screen__main-content--radio__signal__bar"></div>
+                <div class="pip-boy__screen__main-content--radio__signal__bar"></div>
+                <div class="pip-boy__screen__main-content--radio__signal__bar"></div>
+                <div class="pip-boy__screen__main-content--radio__signal__bar"></div>
+                <div class="pip-boy__screen__main-content--radio__signal__bar"></div>
+                <div class="pip-boy__screen__main-content--radio__signal__bar"></div>
+                <div class="pip-boy__screen__main-content--radio__signal__bar"></div>
+                <canvas id="radioLine" class="pip-boy__screen__main-content--radio__signal__line" height='100' width='1000'></canvas>
+              </div>
+            </div>
+
+            <div class="pip-boy__screen__bottom-menu">
+              <span></span>
+              <h3 class="long-title">Local Map</h3>
+              <span></span>
+              <h3 class="long-title">World Map</h3>
+              <span></span>
+              <h3>Quests</h3>
+              <span></span>
+              <h3>Notes</h3>
+              <span></span>
+              <h3>Radio</h3>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="pip-boy__bottom-menu">
+            <div class="pip-boy__bottom-menu__button">
+              <h2>STATS</h2>
+              <div class="pip-boy__bottom-menu__button__button"></div>
+            </div>
+            <div class="pip-boy__bottom-menu__button">
+              <h2>ITEMS</h2>
+              <div class="pip-boy__bottom-menu__button__button"></div>
+            </div>
+            <div class="pip-boy__bottom-menu__button">
+              <h2>DATA</h2>
+              <div class="pip-boy__bottom-menu__button__button"></div>
+            </div>
+            <div class="pip-boy__bottom-menu__horizontal-bar"></div>
+            <div class="pip-boy__bottom-menu__vertical-bar"></div>
+            <div class="pip-boy__bottom-menu__vertical-bar opposed"></div>
+          </div>
+        </div>
+
+        <div class="pip-boy__right-panel">
+          <div class="pip-boy__right-panel__small-wheel">
+            <div class="pip-boy__right-panel__small-wheel__bar"></div>
+            <div class="pip-boy__right-panel__small-wheel__bar"></div>
+            <div class="pip-boy__right-panel__small-wheel__bar"></div>
+            <div class="pip-boy__right-panel__small-wheel__bar"></div>
+          </div>
+          <div class="screw">
+            <div class="screw__bar"></div>
+            <div class="screw__bar"></div>
+          </div>
+          <div class="screw">
+            <div class="screw__bar"></div>
+            <div class="screw__bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="javascript/pip-boy.js"></script>
+</html>
